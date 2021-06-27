@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="form">
+      <h1>Форма</h1>
+      <form action="www.example.com" id="new_form">
+        <div class="form_string">
+          <label for="first_name" required>Имя</label>
+          <input
+            type="text"
+            id="first_name"
+            name="first_name"
+            placeholder="Введите имя"
+          />
+        </div>
+
+        <div class="form_string">
+          <label for="last_name" required>Фамилия</label>
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            placeholder="Введите фамилию"
+          />
+        </div>
+
+        <div class="form_string">
+          <label for="patronymic">Отчество</label>
+          <input
+            type="text"
+            id="patronymic"
+            name="patronymic"
+            placeholder="Введите отчество"
+          />
+        </div>
+
+        <div class="form_string">
+          <div class="gender_block">
+            <div class="gender_choice">
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                class="gender"
+                value="Мужской"
+              />
+              <label for="male">Мужской</label>
+            </div>
+
+            <div class="gender_choice">
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                class="gender"
+                value="Женский"
+              />
+              <label for="female">Женский</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form_string_selector" id="age">
+          <label for="age" required>Дата рождения</label>
+          <input type="date" id="age" name="age" max="2021-06-30" />
+        </div>
+
+        <div class="form_string_selector" id="marital_status">
+          <label for="marital_status">Семейное положение</label>
+          <select id="marital_status" name="marital_status" required>
+            <option value="Не замужем/не женат">Не замужем/не женат</option>
+            <option value="Замужем/женат">Замужем/женат</option>
+            <option value="Разведён/разведена">Разведён/разведена</option>
+            <option value="Вдова/вдовец">Вдова/вдовец</option>
+          </select>
+        </div>
+
+        <div class="form_string_selector" id="education">
+          <label for="education">Образование</label>
+          <select id="education" name="education" required>
+            <div class="options">
+              <option value="Основное общее образование"
+                >Основное общее образование</option
+              >
+              <option value="Среднее общее образование"
+                >Среднее общее образование</option
+              >
+              <option value="Среднее профессиональное образование"
+                >Среднее профессиональное образование</option
+              >
+              <option value="Неполное высшее образование"
+                >Неполное высшее образование</option
+              >
+              <option value="Полное высшее образование"
+                >Полное высшее образование</option
+              >
+            </div>
+          </select>
+        </div>
+
+        <h2>Контактная информация</h2>
+        <div class="form_string">
+          <label for="telephone_number">Моб.телефон</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Введите номер телефона"
+          />
+        </div>
+
+        <div class="form_string">
+          <label for="mail">Электронная почта</label>
+          <input
+            type="email"
+            id="mail"
+            name="mail"
+            placeholder="Введите электронную почту"
+            required
+          />
+        </div>
+
+        <button>Отправить</button>
+      </form>
+    </div>
+
+    <pre id="output"></pre>
+
+    <script type="text/javascript" src="JavaScripts/form.js"></script>
+  </body>
+</html>
