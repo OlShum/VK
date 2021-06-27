@@ -1,7 +1,7 @@
 # Тестовое задание VK
 
 Классы, id и имена прописываеются через "_". Пример:
-   "<div class="form_string_selector" id="age">"
+   //<div class="form_string_selector" id="age">
 
 Стили импортируются в проект через файл styles/style.css
 
